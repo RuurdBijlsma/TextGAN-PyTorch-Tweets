@@ -1,0 +1,68 @@
+====================================================================================================
+> training arguments:
+>>> if_test: 0
+>>> run_model: seqgan
+>>> k_label: 2
+>>> dataset: tweets
+>>> model_type: vanilla
+>>> loss_type: rsgan
+>>> if_real_data: 1
+>>> cuda: 1
+>>> device: cuda:0
+>>> shuffle: 0
+>>> gen_init: normal
+>>> dis_init: uniform
+>>> samples_num: 10000
+>>> vocab_size: 5292
+>>> mle_epoch: 120
+>>> clas_pre_epoch: 10
+>>> adv_epoch: 200
+>>> inter_epoch: 15
+>>> batch_size: 64
+>>> max_seq_len: 46
+>>> start_letter: 1
+>>> padding_idx: 0
+>>> gen_lr: 0.01
+>>> gen_adv_lr: 0.0001
+>>> dis_lr: 0.0001
+>>> clip_norm: 5.0
+>>> pre_log_step: 10
+>>> adv_log_step: 1
+>>> train_data: dataset/tweets.txt
+>>> test_data: dataset/testdata/tweets_test.txt
+>>> temp_adpt: exp
+>>> temperature: 1
+>>> ora_pretrain: 1
+>>> gen_pretrain: 0
+>>> dis_pretrain: 0
+>>> adv_g_step: 1
+>>> rollout_num: 16
+>>> gen_embed_dim: 32
+>>> gen_hidden_dim: 32
+>>> goal_size: 16
+>>> step_size: 4
+>>> mem_slots: 1
+>>> num_heads: 2
+>>> head_size: 256
+>>> d_step: 5
+>>> d_epoch: 3
+>>> adv_d_step: 4
+>>> adv_d_epoch: 2
+>>> dis_embed_dim: 64
+>>> dis_hidden_dim: 64
+>>> num_rep: 64
+>>> use_nll_oracle: 1
+>>> use_nll_gen: 1
+>>> use_nll_div: 1
+>>> use_bleu: 1
+>>> use_self_bleu: 1
+>>> use_clas_acc: True
+>>> use_ppl: 0
+>>> log_file: log/log_0501_1906_49.txt
+>>> save_root: save/20200501/tweets/seqgan_vanilla_lt-rsgan_sl46_temp1_T0501_1906_49/
+>>> signal_file: run_signal.txt
+>>> tips: SeqGAN experiments
+====================================================================================================
+Starting Generator MLE Training...
+[MLE-GEN] epoch 0 : pre_loss = 4.5583, BLEU-[2, 3, 4, 5] = [0.349, 0.224, 0.181, 0.159], NLL_gen = 2.9465, NLL_div = 1.8176, Self-BLEU-[2, 3, 4] = [0.292, 0.195, 0.16], [PPL-F, PPL-R] = 0
+[MLE-GEN] epoch 10 : pre_loss = 1.9870, BLEU-[2, 3, 4, 5] = [0.522, 0.241, 0.131, 0.088], NLL_gen = 1.9394, NLL_div = 1.8275, Self-BLEU-[2, 3, 4] = [0.7, 0.364, 0.196], [PPL-F, PPL-R] = 0

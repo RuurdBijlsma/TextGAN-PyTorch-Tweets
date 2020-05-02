@@ -6,6 +6,12 @@ save/
 savefig/
 .idea/
 
+!Peregrine Output
+!Peregrine Output/dataset
+!Peregrine Output/log
+!Peregrine Output/pretrain
+!Peregrine Output/save
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
